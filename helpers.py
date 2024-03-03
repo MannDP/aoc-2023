@@ -1,2 +1,2 @@
 def read_file(path: str) -> list[str]:
-    return [l.rstrip() for l in open(path, "r")]
+    return [line.rstrip() for line in open(path, "r")]
