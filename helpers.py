@@ -1,2 +1,2 @@
-def read_file(fp: str) -> list[str]:
-    return ["foo"]
+def read_file(path: str) -> list[str]:
+    return [l.rstrip() for l in open(path, "r")]
