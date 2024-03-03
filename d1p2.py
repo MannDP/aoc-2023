@@ -20,6 +20,7 @@ if __name__ == "__main__":
                     digits.append(idx + 1)
                     # overlap of the last character of the previous word, and the start of the next
                     # eg. oneight
+                    # for general correctness, this should be i += 1, but this is an optimization possible given the correct set of words
                     i += len(word) - 2
             i += 1
         first, last = digits[0], digits[-1]
