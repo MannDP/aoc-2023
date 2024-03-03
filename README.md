@@ -1,0 +1,1 @@
+Solve fast, hacky code.
