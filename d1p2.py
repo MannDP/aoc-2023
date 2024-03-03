@@ -19,8 +19,8 @@ if __name__ == "__main__":
                 if line[i : i + len(word)] == word:
                     digits.append(idx + 1)
                     # overlap of the last character of the previous word, and the start of the next
-                    # eg. oneight
-                    # for general correctness, this should be i += 1, but this is an optimization possible given the correct set of words
+                    # eg. oneight (is 18)
+                    # for the general case, i can be skipped wrt to the maximum overlap between 2 words
                     i += len(word) - 2
             i += 1
         first, last = digits[0], digits[-1]
