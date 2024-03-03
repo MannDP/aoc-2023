@@ -10,8 +10,6 @@ if __name__ == "__main__":
                 if len(digits) == 2:
                     digits.pop()
                 digits.append(int(d))
-        if len(digits) != 2:
-            digits.append(digits[0])
-        number = digits[0] * 10 + digits[1]
+        number = digits[0] * 10 + digits[-1]
         result += number
     print(result)
