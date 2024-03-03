@@ -1,2 +1,4 @@
 .metals
 env/
+__pycache__/
+in*.txt
